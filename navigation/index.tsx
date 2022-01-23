@@ -7,7 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
-import { LoginScreen, ModalScreen, NotFoundScreen, TabOneScreen, TabTwoScreen } from '../screens';
+import { LoginScreen, ModalScreen, NotFoundScreen, EpisodeList, TabTwoScreen } from '../screens';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import LinkingConfiguration from './LinkingConfiguration';
@@ -63,15 +63,15 @@ const BottomTabNavigator = () => {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Episodes"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
       <BottomTab.Screen
-        name="TabOne"
-        component={TabOneScreen}
-        options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
+        name="Episodes"
+        component={EpisodeList}
+        options={({ navigation }: RootTabScreenProps<'Episodes'>) => ({
+          title: 'Episodes',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Pressable

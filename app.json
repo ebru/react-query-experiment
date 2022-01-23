@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app-closing-test",
-    "slug": "app-closing-test",
+    "name": "react-query-experiment",
+    "slug": "react-query-experiment",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
