@@ -1,5 +1,6 @@
 import axios from '../utils/axios'
 
-export const getEpisodeList = async () => {
-  return axios.get('/episode')
+export const fetchEpisodeList = async () => {
+  const { data } = await axios.get('/episode');
+  return data;
 }
