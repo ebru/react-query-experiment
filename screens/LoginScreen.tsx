@@ -2,10 +2,9 @@ import * as React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { Text, View } from '../components/Themed';
-import { RootStackScreenProps } from '../types';
 import { signInUser } from '../redux/auth/actions';
 
-const LoginScreen = ({ navigation }: RootStackScreenProps<'Login'>) => {
+const LoginScreen = () => {
   const dispatch = useDispatch();
 
   const handleSignIn = () => {
