@@ -7,7 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
-import { LoginScreen, ModalScreen, NotFoundScreen, EpisodeList, TabTwoScreen } from '../screens';
+import { LoginScreen, ModalScreen, NotFoundScreen, EpisodeList, TabTwoScreen, EpisodeDetail } from '../screens';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import LinkingConfiguration from './LinkingConfiguration';
@@ -45,6 +45,7 @@ const RootNavigator = () => {
           <>
             <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
             <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+            <Stack.Screen name="EpisodeDetail" component={EpisodeDetail} />
             <Stack.Group screenOptions={{ presentation: 'modal' }}>
               <Stack.Screen name="Modal" component={ModalScreen} />
             </Stack.Group>

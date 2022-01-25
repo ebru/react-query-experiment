@@ -24,7 +24,7 @@ const EpisodeListScreen = () => {
 
   const handleDetailPress = (id: number) => {
     console.log(`detail id: ${id} is pressed`);
-    navigation.navigate('NotFound');
+    navigation.navigate('EpisodeDetail', { id });
   }
 
   return (
