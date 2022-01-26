@@ -2,9 +2,9 @@
   "name": "react-query-experiment",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "start": "npx react-native start",
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest --watchAll"
@@ -25,11 +25,14 @@
     "expo-linking": "2.4.2",
     "expo-splash-screen": "0.13.5",
     "expo-status-bar": "1.1.0",
+    "expo-updates": "~0.10.13",
     "expo-web-browser": "10.0.3",
     "lodash": "4.17.21",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.2.0",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "3.8.0",
     "react-native-web": "0.17.1",
@@ -38,10 +41,7 @@
     "redux": "4.1.2",
     "redux-devtools-extension": "2.13.9",
     "redux-thunk": "2.4.1",
-    "reselect": "4.1.5",
-    "expo-updates": "~0.10.13",
-    "react-native-gesture-handler": "~1.10.2",
-    "react-native-reanimated": "~2.2.0"
+    "reselect": "4.1.5"
   },
   "devDependencies": {
     "@babel/core": "7.12.9",
@@ -50,6 +50,8 @@
     "@types/react-native": "0.64.12",
     "@types/react-redux": "7.1.20",
     "jest-expo": "43.0.0",
+    "react-native-flipper": "0.129.0",
+    "react-query-native-devtools": "4.0.0",
     "typescript": "4.3.5"
   },
   "resolutions": {
